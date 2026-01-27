@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="action_settings">Настройки</string>
+    <string name="notes_fragment_label">Notes</string>
+    <string name="title_hint">Заголовок</string>
+    <string name="content_hint">Текст заметки</string>
+    <string name="new_note_dialog_title">Новая заметка</string>
+    <string name="add_button">Добавить</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="title_empty_error">Заголовок не может быть пустым</string>
+    <string name="edit_note_dialog_title">Редактировать заметку</string>
+    <string name="save_button">Сохранить</string>
+    <string name="delete_note_dialog_title">Удалить заметку</string>
+    <string name="delete_note_dialog_message">Вы уверены, что хотите удалить эту заметку?</string>
+    <string name="delete_button">Удалить</string>
+    <string name="settings_fragment_label">Настройки</string>
+    <string name="college_name">ЧАТК</string>
+    <string name="author_name">O. Amir</string>
+</resources>

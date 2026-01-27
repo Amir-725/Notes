@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Glassmorphism Palette -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="background_gradient_start">#E0C3FC</color>
+    <color name="background_gradient_end">#8EC5FC</color>
+
+    <color name="glass_bg">#80FFFFFF</color> <!-- 50% transparent white -->
+    <color name="glass_border">#B3FFFFFF</color> <!-- 70% transparent white -->
+    <color name="text_color_primary">#212121</color>
+    <color name="text_color_secondary">#757575</color>
+</resources>
