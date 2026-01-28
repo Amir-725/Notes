@@ -12,6 +12,7 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,9 +37,9 @@ fun NoteActionsSheet(
                     .clickable(onClick = onEditClick)
                     .padding(vertical = 12.dp)
             ) {
-                Icon(Icons.Filled.Edit, contentDescription = "Edit")
+                Icon(Icons.Filled.Edit, contentDescription = "Edit", tint = MaterialTheme.colorScheme.onSurface)
                 Spacer(modifier = Modifier.width(16.dp))
-                Text(text = stringResource(id = R.string.edit_note_dialog_title))
+                Text(text = stringResource(id = R.string.edit_note_dialog_title), color = MaterialTheme.colorScheme.onSurface)
             }
             Row(
                 modifier = Modifier

@@ -9,6 +9,7 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -17,16 +18,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.amir.notes.ui.theme.GlassBg
-import com.amir.notes.ui.theme.GlassBorder
 
 @Composable
 fun GlassBox(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(16.dp))
-            .background(GlassBg)
-            .border(1.dp, GlassBorder, RoundedCornerShape(16.dp))
+            .background(MaterialTheme.colorScheme.surface)
+            .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f), RoundedCornerShape(16.dp))
     ) {
         content()
     }
@@ -36,11 +35,11 @@ fun GlassBox(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
 @Composable
 fun GlassTopAppBar(title: String, onSettingsClick: () -> Unit) {
     TopAppBar(
-        title = { Text(text = title, color = Color.White) },
+        title = { Text(text = title, color = MaterialTheme.colorScheme.onBackground) },
         colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Transparent),
         actions = {
             IconButton(onClick = onSettingsClick) {
-                Icon(Icons.Filled.Settings, contentDescription = "Settings", tint = Color.White)
+                Icon(Icons.Filled.Settings, contentDescription = "Settings", tint = MaterialTheme.colorScheme.onBackground)
             }
         }
     )
